@@ -14,4 +14,4 @@ def download(url, file_name):
 
 def get_page(url):
 	response = req.urlopen(url)
-	return response.read()
+	return response.read().decode("utf8")
