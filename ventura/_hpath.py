@@ -1,7 +1,5 @@
 import pathlib
 import shutil
-from pathlib import Path
-
 import os
 
 def create_dir(dir):	

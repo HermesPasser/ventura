@@ -1,12 +1,12 @@
 import urllib.request as req
-import hio
+import ventura._hpath as hpath
 import os
 
 def download(url, file_name):
 	response = req.urlopen(url)
 	
 	# Create folders if need
-	hio.create_dir(file_name)
+	hpath.create_dir(file_name)
 	
 	file = open(file_name,'wb')
 	file.write(response.read()) 
