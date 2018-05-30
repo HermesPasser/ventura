@@ -2,6 +2,12 @@ import pathlib
 import shutil
 import os
 
+def load_file(name):
+	file = open(name, 'r')
+	text = file.read()
+	file.close()
+	return text
+
 def create_dir(dir):	
 	dir = os.path.dirname(dir)
 	if dir == '':

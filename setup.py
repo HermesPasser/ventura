@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
       name = 'ventura',
@@ -8,5 +8,5 @@ setup(
       author = 'Hermes Passer',
       author_email = 'hermespasser@gmail.com',
       license = 'MIT',
-      packages = find_packages()
+      packages = ['ventura']
 )

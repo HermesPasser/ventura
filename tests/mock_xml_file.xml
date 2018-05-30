@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ventura>
+	<update version="0.4">
+		<url>https://hermespasser.github.io</url>
+		<delete>folder\,file.txt</delete>
+	</update>
+	<update version="0.3">
+		<url>https://www.gladiocitrico.com</url>
+		<delete>file.py</delete>
+	</update>
+	<update version="0.2">
+		<url>https://www.gladiocitrico.com.br</url>
+		<delete>folder1\</delete>
+	</update>
+</ventura> 
