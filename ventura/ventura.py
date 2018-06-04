@@ -13,8 +13,10 @@ def update_if_is_need(version, xml_url):
 	if ventura.is_updated():
 		return False
 	
-	hpath.delete_files(ventura.get_files_to_delete())
-	hweb.download(ventura.get_link(), 'update.zip')
-	hzip.extract('update.zip', '')
+	links = ventura.get_links()
+	for link in links:
+		hweb.download(link, 'update.zip')
+		hzip.extract('update.zip', '')
 	
+	hpath.delete_files(ventura.get_files_to_delete())
 	return True
