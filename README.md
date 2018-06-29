@@ -12,10 +12,10 @@ First you need to install the package using ``pip install ventura`` and import i
 
 ### Documentation
 
-**update_if_is_need** *>> version (double), xml_url (string), path = "" (string, optional)*
-version: *current project version*
-xml_url: *url of the xml file on web*
-path: *path where the new version will be downloaded and unpacked*
+**update_if_is_need** *>> version (double), xml_url (string), path = "" (string, optional)*  
+version: *current project version*  
+xml_url: *url of the xml file on web*  
+path: *path where the new version will be downloaded and unpacked*  
 
 ### XML format
 
@@ -28,7 +28,7 @@ path: *path where the new version will be downloaded and unpacked*
 	</update>  
 </ventura>
 ```
-ventura: *root node*
-update: *nodes with update information, you can have various of it. Version attribute says wich version is it.*
-url: *file to download url, only one by node. Must be inside of a update node.*
-delete: *files and folders to delete of previous version separated by commas, put a backslash "\" if is a folder. Must be inside of a update node and only one by node.*
+ventura: *root node*  
+update: *nodes with update information, you can have various of it. Version attribute says wich version is it.*  
+url: *file to download url, only one by node. Must be inside of a update node.*  
+delete: *files and folders to delete of previous version separated by commas, put a backslash "\" if is a folder. Must be inside of a update node and only one by node.*  
